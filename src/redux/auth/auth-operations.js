@@ -61,3 +61,42 @@ const authOperations = {
 };
 
 export default authOperations;
+
+// const signup =
+//   ({ name, email, password }) =>
+//   (dispatch) => {
+//     const user = { name, email, password };
+//     dispatch(actions.registerUserRequest());
+
+//     axios
+//       .post("/auth/signup", user)
+//       .then(({ data }) => dispatch(action.registerUserSuccess(data.data)))
+//       .catch((error) => dispatch(action.registerUserError(error)));
+//   };
+
+// const signin =
+//   ({ email, password }) =>
+//   (dispatch) => {
+//     const user = { email, password };
+//     dispatch(actions.loginUserRequest());
+
+//     axios
+//       .post("/auth/signin", user)
+//       .then(({ data }) => {
+//         dispatch(action.loginUserSuccess(data.data));
+//         token.setToken(data.data.token);
+//       })
+//       .catch((error) => dispatch(action.loginUserError(error)));
+//   };
+
+// const signout = () => (dispatch) => {
+//   dispatch(action.signoutUserRequest());
+
+//   axios
+//     .post("/auth/signout")
+//     .then(() => {
+//       dispatch(actions.signoutUserSuccess());
+//       token.unsetToken();
+//     })
+//     .catch((error) => dispatch(actions.signoutUserError(error)));
+// };
